@@ -34,7 +34,7 @@ class MovableObject {
 
     /**
      * 
-     * @param {Array} arr - ['../img/image1.png','../img/image2.png', ... ]
+     * @param {Array} arr - ['img/image1.png','../img/image2.png', ... ]
      * 
      */
 
@@ -43,7 +43,7 @@ class MovableObject {
             let img = new Image();
             img.src = path;
             this.imageCache[path] = img;
-        });
+        })
     }
 
 

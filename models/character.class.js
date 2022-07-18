@@ -90,9 +90,9 @@ class Character extends MovableObject {
             }
             
             if (this.world.keyboard.RIGHT || this.world.keyboard.LEFT) {
-                    //walk-animation
-                    this.playAnimation(this.IMAGES_WALKING);
-                   }
+                //walk-animation
+                this.playAnimation(this.IMAGES_WALKING);
+            }
             
         }, 300);     
     }

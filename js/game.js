@@ -4,11 +4,16 @@ let keyboard = new Keyboard();
 
 function init() {
     canvas = document.getElementById('canvas');
+    main = document.getElementById('main');
+    button = document.getElementById('startButton');
+    canvas.classList.remove('d-none');
+    button.classList.add('d-none');
+    main.classList.add('no-background');
     world = new World(canvas, keyboard);
     
 
-    console.log('My Character is', world.character);
-    console.log('My Chicken is', world.enemies);
+    //console.log('My Character is', world.character);
+    //console.log('My Chicken is', world.enemies);
 
 }
 

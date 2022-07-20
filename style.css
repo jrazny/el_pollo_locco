@@ -1,11 +1,61 @@
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
+    background-image: url('./img/9_intro_outro_screens/start/startscreen_1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height:100vh;
+}
+
+.d-none {
+    display: none;
+}
+
+.no-background {
+    background-image: none;
 }
 
 canvas {
     background-color: black;
+    display: block;
+    border: 50px solid white;
+}
+
+.startButton {
+    background-color: darkorange;
+    margin-top: 10px;
+    padding: 10px 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.startButton:hover {
+    color: rgb(130, 56, 3);
+}
+
+/*Smartphones ++++++++++++++++++++   */
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+}
+
+
+/*Smartphones ++++++++++++++++++++   */
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
 }
